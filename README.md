@@ -1,153 +1,163 @@
-CommunityFit Gym Website
-Project Overview
+# CommunityFit Gym Website
 
-CommunityFit Gym Website is a static front-end website created for the User Centric Frontend Development Milestone Project.
+## Project Overview
+
+CommunityFit Gym Website is a static front-end website created for the **User Centric Frontend Development Milestone Project**.
 
 The aim of the project is to present useful information about a gym in a clear and accessible way for both current and potential members. The site allows users to easily find information about classes, trainers, membership options, opening hours and how to contact the gym.
 
-The website was built using HTML5 and CSS3, with the layout and structure planned first using Figma.
+The website was built using **HTML5 and CSS3**, with the layout and structure planned first using **Figma** before development began.
 
-Live Website
+---
+
+## Live Website
 
 The project is deployed using GitHub Pages.
 
-Live website:
-
+Live site:
 https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/
 
-Purpose of the Website
+---
 
-The purpose of this website is to provide a simple and user-friendly way for people to learn about the gym and what it offers.
+## User Experience (UX)
 
-It is designed for:
+### Target Audience
 
-people thinking about joining the gym
+The website is designed for:
 
-current members who want information about classes or trainers
+* people interested in joining a local gym
+* current gym members looking for information
+* beginners looking for a welcoming fitness environment
+* users searching for class information, trainers or contact details
 
-visitors looking for contact details and opening hours
+### Design Approach
 
-The site focuses on presenting information clearly and making navigation easy.
+The site was designed to reflect a **friendly community gym atmosphere** rather than an intense or intimidating fitness brand.
 
-User Goals
+The layout focuses on:
+
+* clear navigation
+* easy-to-read sections
+* simple page structure
+* accessible content
+
+Content is grouped into logical sections so users can quickly find the information they need.
+
+### Planning
+
+Before building the website, the layout and structure were planned using **Figma**.
+
+Planning documents included:
+
+* Brief & Goals
+* Sitemap / Information Architecture
+* Wireframes
+
+These documents helped guide the structure and layout of each page before development began.
+
+---
+
+## User Goals
 
 Users visiting the website should be able to:
 
-learn about the gym and its atmosphere
+* learn about the gym and its environment
+* explore the available classes
+* view trainer information
+* understand membership options
+* find contact details and opening hours
+* send a message using the contact form
 
-explore the classes offered
+---
 
-see information about the trainers
-
-understand membership options
-
-find the gym’s contact details and opening hours
-
-send a message using the contact form
-
-Site Goals
+## Site Goals
 
 The main goals of the website are to:
 
-present information about the gym in a clear and structured way
+* present gym information in a clear and structured way
+* provide an easy-to-navigate website
+* create a welcoming online presence
+* help potential members learn about the gym
+* demonstrate user-centred design planning
 
-create a welcoming and friendly online presence
+---
 
-make navigation simple and intuitive
-
-provide useful information to potential members
-
-demonstrate user-centred planning and design
-
-Website Features
+## Website Features
 
 The website includes the following pages.
 
-Home
+### Home
 
-Introduces the gym and provides an overview of what it offers.
+Introduces the gym and gives an overview of its facilities and atmosphere.
 
-Classes
+### Classes
 
-Shows the different fitness classes available at the gym.
+Displays the different fitness classes offered by the gym.
 
-Trainers
+### Trainers
 
 Introduces the trainers who work at the gym.
 
-Membership
+### Membership
 
-Provides information about membership options and plans.
+Provides information about available membership plans.
 
-Contact
+### Contact
 
-Provides the gym address, phone number, email address, opening hours and a contact form.
+Provides the gym address, phone number, email address and opening hours, as well as a contact form.
 
-Thank You Page
+### Thank You Page
 
-A confirmation page that appears after a user submits the contact form.
-The contact form redirects users to thankyou.html so they receive confirmation that their message has been sent.
+A confirmation page that appears after the user submits the contact form.
 
-Navigation
+The contact form redirects to **thankyou.html**, confirming that the message was successfully submitted.
 
-The website uses a navigation menu that appears on every page. This allows users to move easily between sections of the site.
+---
 
-The navigation includes:
+## Navigation
 
-Home
+The navigation menu appears on every page so users can move easily between sections of the website.
 
-Classes
+Navigation links include:
 
-Trainers
+* Home
+* Classes
+* Trainers
+* Membership
+* Contact
 
-Membership
+The footer also includes quick links and social media links.
 
-Contact
+---
 
-The footer also includes quick links to these pages and links to social media.
+## Images
 
-Design and Planning
-
-Before building the website, the structure and layout were planned using Figma.
-
-The following planning documents were created during the design phase and are included in the project files:
-
-Brief & Goals
-
-Sitemap / Information Architecture
-
-Wireframes
-
-These documents helped define the structure of the site and the layout of each page before development began.
-
-Images
-
-Images used on the website were sourced from Pexels, which provides free stock photography.
+Images used on the website were sourced from **Pexels**, which provides free stock photography.
 
 Images were selected to reflect a friendly and welcoming gym environment.
 
-All images include alt text descriptions. These descriptions match the meaning of the image so that screen readers can describe the content properly for visually impaired users.
+All images include **alt text descriptions** to improve accessibility and ensure screen readers can describe the images.
 
-Technologies Used
+---
+
+## Technologies Used
 
 The project was built using:
 
-HTML5
+* HTML5
+* CSS3
+* Figma (planning and wireframes)
+* Git (version control)
+* GitHub (repository hosting)
+* GitHub Pages (deployment)
 
-CSS3
+---
 
-Figma (planning and wireframes)
-
-Git (version control)
-
-GitHub (repository hosting)
-
-GitHub Pages (deployment)
-
-Project Structure
+## Project Structure
 
 Main project files:
 
+```
 index.html
 classes.html
 trainers.html
@@ -162,152 +172,151 @@ images/
 
 assets/
    planning documents
-Testing
+```
 
-Testing was carried out during development to ensure the website works correctly and is easy to use.
+---
 
-Manual Testing
+## Testing
+
+Testing was carried out throughout development to ensure the website works correctly.
+
+### Manual Testing
 
 Manual testing included checking:
 
-navigation links between pages
+* navigation links between pages
+* layout and content display
+* contact form behaviour
+* redirection to the thank you page after form submission
+* image scaling and layout
+* responsive behaviour on different screen sizes
 
-layout and content display
+---
 
-contact form behaviour
+### HTML Validation
 
-redirection to the thank you page after form submission
-
-image scaling and layout
-
-responsive behaviour on different screen sizes
-
-HTML Validation
-
-All HTML files were validated using the W3C HTML Validator.
+All HTML files were validated using the **W3C HTML Validator**.
 
 Files tested:
 
-index.html
+* index.html
+* classes.html
+* trainers.html
+* membership.html
+* contact.html
+* thankyou.html
 
-classes.html
-
-trainers.html
-
-membership.html
-
-contact.html
-
-thankyou.html
-
-After final corrections, no validation errors were found.
+After final corrections, **no validation errors were found**.
 
 Validator used:
-
 https://validator.w3.org/
 
-CSS Validation
+---
 
-The stylesheet style.css was validated using the W3C CSS Validator.
+### CSS Validation
+
+The stylesheet **style.css** was validated using the **W3C CSS Validator**.
 
 Result:
 
+```
 Congratulations! No Error Found.
 This document validates as CSS level 3 + SVG.
+```
 
 Warnings reported:
 
-Line	Issue
-101	clip property deprecated
-232	same colour used for background and border on button hover/focus
+| Line | Issue                                                            |
+| ---- | ---------------------------------------------------------------- |
+| 101  | clip property deprecated                                         |
+| 232  | same colour used for background and border on button hover/focus |
 
-These warnings do not affect the layout or functionality of the site.
+These warnings do not affect the layout or functionality of the website.
 
 Validator used:
-
 https://jigsaw.w3.org/css-validator/
 
-Responsiveness
+---
 
-The site was tested using browser developer tools to check how it behaves on different screen sizes including:
+### Responsiveness Testing
 
-mobile
+The website was tested using browser developer tools to ensure the layout works on:
 
-tablet
+* mobile devices
+* tablets
+* desktop screens
 
-desktop
+The layout adjusts correctly and remains readable across different screen sizes.
 
-The layout adjusts correctly and remains readable across different screen widths.
+---
 
-Bugs Found and Fixed
+### Bugs Found and Fixed
 
-During development a few small issues were found and corrected:
+During development a few small issues were identified and corrected:
 
-incorrect image file extensions
-
-spacing adjustments in layout
-
-navigation link updates
-
-contact form updated to redirect to the thank you page
+* incorrect image file extensions
+* spacing adjustments
+* navigation link updates
+* contact form updated to redirect to the thank you page
 
 No major bugs remain in the final version.
 
-Future Features
+---
 
-Possible improvements for the website could include:
+## Future Features
 
-online class booking system
+Possible future improvements include:
 
-membership sign-up system
+* online class booking system
+* membership sign-up system
+* trainer profile pages
+* interactive class timetable
+* Google Maps integration on the contact page
 
-trainer profile pages with booking options
+---
 
-interactive class timetable
+## Deployment
 
-Google Maps integration on the contact page
+The project was deployed using **GitHub Pages**.
 
-Deployment
+Steps used for deployment:
 
-The website was deployed using GitHub Pages.
-
-Deployment steps:
-
-The project was pushed to a GitHub repository.
-
-GitHub Pages was enabled in the repository settings.
-
-The site was deployed from the main branch.
+1. The project repository was created on GitHub.
+2. GitHub Pages was enabled in repository settings.
+3. The site was deployed from the **main branch**.
 
 Live website:
 
 https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/
 
-The deployed version of the site matches the development version.
+---
 
-Version Control
+## Version Control
 
-Git and GitHub were used to manage the project during development.
+Git and GitHub were used to track changes throughout development.
 
-Commits were made regularly while building the site to record changes and progress.
+Commits were made regularly to document progress and updates.
 
-Credits
-Images
+---
+
+## Credits
+
+### Images
 
 Images used on this website were sourced from:
 
 https://www.pexels.com/
 
-Validation Tools
+### Validation Tools
 
-HTML validation was carried out using:
-
+HTML validation:
 https://validator.w3.org/
 
-CSS validation was carried out using:
-
+CSS validation:
 https://jigsaw.w3.org/css-validator/
 
-Author
+---
 
-Created by Abdul Khoujja for the User Centric Frontend Development Milestone Project.
+## Author
+
+Created by **Abdul Khoujja** for the **User Centric Frontend Development Milestone Project**.
