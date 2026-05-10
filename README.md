@@ -49,9 +49,9 @@ Before building the website, the layout and structure were planned using **Figma
 
 Planning documents included:
 
-* Brief & Goals
-* Sitemap / Information Architecture
-* Wireframes
+* [Brief and Goals](assets/brief-and-goals.pdf)
+* [Sitemap / Information Architecture](assets/sitemap-ia.pdf)
+* [Wireframes](assets/wireframes.pdf)
 
 These documents helped guide the structure and layout of each page before development began.
 
@@ -171,7 +171,7 @@ css/
 images/
 
 assets/
-   planning documents
+   planning and validation evidence
 ```
 
 ---

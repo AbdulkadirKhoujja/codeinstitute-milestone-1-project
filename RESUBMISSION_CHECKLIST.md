@@ -21,8 +21,8 @@ This checklist maps the resit feedback to the repo changes needed before final s
 
 ## 3. Maintainability and Documentation
 
-- [ ] Rename evidence files in `assets/` to lower-case, hyphenated filenames with no spaces, brackets, ampersands or special characters.
-- [ ] Update README links and any internal references after renaming evidence files.
+- [x] Rename evidence files in `assets/` to lower-case, hyphenated filenames with no spaces, brackets, ampersands or special characters.
+- [x] Update README links and any internal references after renaming evidence files.
 - [ ] Add finished website screenshots mapped to user stories where possible.
 - [ ] If screenshots cannot be generated locally, add a clear evidence table with exact filenames to capture manually.
 - [ ] Expand the README with project purpose, target users, user stories, design decisions, accessibility rationale, responsive design, testing stages, validation evidence, deployment evidence, bugs and fixes, future improvements and lifecycle narrative.
