@@ -39,6 +39,18 @@ Desktop and narrow viewport screenshots were produced with Microsoft Edge headle
 | Contact | `contact-desktop.png` | `contact-narrow.png` |
 | Thank You | `thankyou-desktop.png` | `thankyou-narrow.png` |
 
+## Local Static Checks Run
+
+The following local checks were run during the resubmission work:
+
+| Check | Command or method | Result |
+| --- | --- | --- |
+| Old inaccessible blue removed from stylesheet | `rg -n "#2f80ed|#1366d6|clip:|:focus" css/style.css` | Only intentional `:focus-visible` selectors remain; old colour values and deprecated `clip:` are absent from CSS. |
+| External-link security attributes | `rg -n "target" .` | All external social links using `target="_blank"` include `rel="noopener noreferrer"`. |
+| Evidence filename scan | PowerShell scan for capitals, spaces, ampersands, brackets and underscores in `assets/` filenames | No non-compliant evidence filenames found. |
+| Screenshot generation | Microsoft Edge headless screenshots for all pages | Desktop and narrow screenshots generated successfully in `docs/evidence/screenshots/`. |
+| Contrast calculation | Relative luminance calculation for old and new blues | Old `#2f80ed` on white: 3.87:1; new `#005ea8` on white: 6.63:1; hover `#004b8d` on white: 8.78:1. |
+
 ## Validation Follow-Up Instructions
 
 Before final resubmission:

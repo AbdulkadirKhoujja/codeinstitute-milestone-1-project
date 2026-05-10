@@ -17,7 +17,7 @@ This checklist maps the resit feedback to the repo changes needed before final s
 - [x] Add `rel="noopener noreferrer"` to every external link using `target="_blank"`.
 - [x] Check all HTML files for external link security consistency.
 - [x] Review CSS validator warnings and either fix them or document why they are harmless.
-- [ ] Re-run available validation checks after each implementation batch.
+- [x] Re-run available validation checks after each implementation batch.
 
 ## 3. Maintainability and Documentation
 
@@ -31,9 +31,9 @@ This checklist maps the resit feedback to the repo changes needed before final s
 
 - [x] Inspect repo structure before changes.
 - [x] Check initial Git status before changes.
-- [ ] Make multiple small, meaningful commits.
-- [ ] Run `git status` before and after every commit.
-- [ ] Keep each commit working and feature-scoped.
+- [x] Make multiple small, meaningful commits.
+- [x] Run `git status` before and after every commit.
+- [x] Keep each commit working and feature-scoped.
 
 ## 5. Testing and Deployment Evidence
 
