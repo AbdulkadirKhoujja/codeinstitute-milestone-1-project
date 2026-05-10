@@ -156,6 +156,7 @@ header .container {
 .footer-links a:focus-visible {
   outline: 3px solid #ffbf47;
   outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(11, 31, 51, 0.85);
 }
 
 /* ========================================
@@ -488,9 +489,10 @@ blockquote {
 
 .form-group input:focus-visible,
 .form-group textarea:focus-visible {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #005ea8;
   outline-offset: 2px;
   border-color: #005ea8;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 /* ========================================
