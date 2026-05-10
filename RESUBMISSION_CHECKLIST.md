@@ -4,19 +4,19 @@ This checklist maps the resit feedback to the repo changes needed before final s
 
 ## 1. UX, Accessibility and Responsivity
 
-- [ ] Replace the failed button, active navigation and key link blue `#2f80ed` where it is used with white or normal-sized text.
-- [ ] Use a visually similar darker blue that reaches at least 4.5:1 contrast against white.
-- [ ] Check hover and active states for readable contrast.
-- [ ] Add clear `:focus-visible` styles for navigation links, buttons, form controls, text links and footer links.
+- [x] Replace the failed button, active navigation and key link blue `#2f80ed` where it is used with white or normal-sized text.
+- [x] Use a visually similar darker blue that reaches at least 4.5:1 contrast against white.
+- [x] Check hover and active states for readable contrast.
+- [x] Add clear `:focus-visible` styles for navigation links, buttons, form controls, text links and footer links.
 - [ ] Document the old colour issue, new colour choice, contrast ratio evidence and keyboard focus checks in the README.
 
 ## 2. HTML and CSS Implementation
 
-- [ ] Fix HTML validator warnings in `index.html`, especially article elements without headings.
-- [ ] Fix HTML validator warnings in `trainers.html`, especially article elements without headings.
-- [ ] Add `rel="noopener noreferrer"` to every external link using `target="_blank"`.
-- [ ] Check all HTML files for external link security consistency.
-- [ ] Review CSS validator warnings and either fix them or document why they are harmless.
+- [x] Fix HTML validator warnings in `index.html`, especially article elements without headings.
+- [x] Fix HTML validator warnings in `trainers.html`, especially article elements without headings.
+- [x] Add `rel="noopener noreferrer"` to every external link using `target="_blank"`.
+- [x] Check all HTML files for external link security consistency.
+- [x] Review CSS validator warnings and either fix them or document why they are harmless.
 - [ ] Re-run available validation checks after each implementation batch.
 
 ## 3. Maintainability and Documentation
