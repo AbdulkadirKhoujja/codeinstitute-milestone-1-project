@@ -1,163 +1,182 @@
 # CommunityFit Gym Website
 
-## Project Overview
+CommunityFit Gym is a static HTML and CSS website created for the Code Institute User-Centric Frontend Development Milestone Project. The project presents a welcoming local gym with clear information about classes, trainers, membership options, opening hours and contact routes.
 
-CommunityFit Gym Website is a static front-end website created for the **User Centric Frontend Development Milestone Project**.
+Live site: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/
 
-The aim of the project is to present useful information about a gym in a clear and accessible way for both current and potential members. The site allows users to easily find information about classes, trainers, membership options, opening hours and how to contact the gym.
+## Project Purpose
 
-The website was built using **HTML5 and CSS3**, with the layout and structure planned first using **Figma** before development began.
+The site is designed to help potential and current gym members quickly understand what CommunityFit Gym offers. The project focuses on accessible navigation, readable content, friendly visual design and responsive layouts across desktop and smaller screens.
 
----
+## Target Users
 
-## Live Website
+* People considering joining a local gym.
+* Beginners who want a welcoming and non-intimidating fitness environment.
+* Existing members checking classes, opening hours or contact details.
+* Users who need a simple contact form and clear gym information.
 
-The project is deployed using GitHub Pages.
+## User Stories
 
-Live site:
-https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/
+| User story | How the site meets it | Evidence |
+| --- | --- | --- |
+| As a new visitor, I want to understand the gym atmosphere quickly. | The home page hero and benefit cards explain the friendly community focus. | [Home desktop screenshot](docs/evidence/screenshots/index-desktop.png) |
+| As a beginner, I want to find approachable classes. | The classes page lists class types, levels and a weekly timetable. | [Classes desktop screenshot](docs/evidence/screenshots/classes-desktop.png) |
+| As a potential member, I want to compare membership options. | The membership page shows three plan cards and benefits. | [Membership desktop screenshot](docs/evidence/screenshots/membership-desktop.png) |
+| As a user choosing support, I want to learn about trainers. | The trainers page introduces trainer profiles and coaching approach. | [Trainers desktop screenshot](docs/evidence/screenshots/trainers-desktop.png) |
+| As a user with a question, I want to contact the gym easily. | The contact page includes contact details, opening hours and a form. | [Contact desktop screenshot](docs/evidence/screenshots/contact-desktop.png) |
+| As a form user, I want confirmation after submitting. | The contact form redirects to `thankyou.html`. | [Thank you desktop screenshot](docs/evidence/screenshots/thankyou-desktop.png) |
+| As a mobile or narrow-screen user, I want content to remain readable. | Layouts collapse to single columns and navigation stacks on narrow screens. | [Narrow screenshots](#screenshot-evidence) |
 
----
+## Design Decisions
 
-## User Experience (UX)
+The design uses a calm blue palette, white cards, large headings and clear sections to support a friendly community gym identity. The structure is intentionally simple so users can scan the site without needing complex interactions.
 
-### Target Audience
-
-The website is designed for:
-
-* people interested in joining a local gym
-* current gym members looking for information
-* beginners looking for a welcoming fitness environment
-* users searching for class information, trainers or contact details
-
-### Design Approach
-
-The site was designed to reflect a **friendly community gym atmosphere** rather than an intense or intimidating fitness brand.
-
-The layout focuses on:
-
-* clear navigation
-* easy-to-read sections
-* simple page structure
-* accessible content
-
-Content is grouped into logical sections so users can quickly find the information they need.
-
-### Planning
-
-Before building the website, the layout and structure were planned using **Figma**.
-
-Planning documents included:
+Planning documents:
 
 * [Brief and Goals](assets/brief-and-goals.pdf)
 * [Sitemap / Information Architecture](assets/sitemap-ia.pdf)
 * [Wireframes](assets/wireframes.pdf)
 
-These documents helped guide the structure and layout of each page before development began.
-
----
-
-## User Goals
-
-Users visiting the website should be able to:
-
-* learn about the gym and its environment
-* explore the available classes
-* view trainer information
-* understand membership options
-* find contact details and opening hours
-* send a message using the contact form
-
----
-
-## Site Goals
-
-The main goals of the website are to:
-
-* present gym information in a clear and structured way
-* provide an easy-to-navigate website
-* create a welcoming online presence
-* help potential members learn about the gym
-* demonstrate user-centred design planning
-
----
-
 ## Website Features
 
-The website includes the following pages.
+* Consistent header navigation across all pages.
+* Active navigation state using `aria-current="page"`.
+* Home page hero, benefits, featured classes, trainer preview, membership call-to-action and testimonials.
+* Classes page with class cards and timetable table.
+* Trainers page with trainer profiles and coaching information.
+* Membership page with plan cards and FAQs.
+* Contact page with opening hours, contact details and form.
+* Thank you page for form submission confirmation.
+* Footer quick links and external social links.
 
-### Home
+## Accessibility
 
-Introduces the gym and gives an overview of its facilities and atmosphere.
+The resubmission feedback identified the previous interactive blue `#2f80ed` as approximately 3.87:1 against white text, below the expected 4.5:1 contrast ratio for normal text.
 
-### Classes
+The interactive colour has been changed to `#005ea8`, which keeps the visual design similar while improving contrast:
 
-Displays the different fitness classes offered by the gym.
+| Colour use | Old ratio | New ratio | WCAG result |
+| --- | ---: | ---: | --- |
+| White text on `#2f80ed` | 3.87:1 | Not used for normal text | Failed normal text |
+| White text on `#005ea8` | Not applicable | 6.63:1 | Passes AA normal text |
+| White text on hover `#004b8d` | Not applicable | 8.78:1 | Passes AA normal text |
 
-### Trainers
+Keyboard focus has also been improved:
 
-Introduces the trainers who work at the gym.
+* Navigation links, logo, buttons, key text links and footer links use `:focus-visible`.
+* Form inputs and textareas use a visible blue focus outline.
+* Important interactive elements have a high-visibility focus treatment with a yellow outline and dark outer ring where needed.
+* Manual keyboard tab-through verification is listed in [docs/testing.md](docs/testing.md) so it can be repeated before resubmission.
 
-### Membership
+Other accessibility choices:
 
-Provides information about available membership plans.
+* Images include descriptive `alt` text.
+* Tables use headings and, where appropriate, captions.
+* Active page navigation uses `aria-current="page"`.
+* Quote-only testimonial cards were changed from `article` to `div` to avoid misleading article semantics and HTML validator warnings.
+* External links that open in a new tab include `rel="noopener noreferrer"`.
 
-### Contact
+## Responsive Design
 
-Provides the gym address, phone number, email address and opening hours, as well as a contact form.
+The stylesheet uses responsive media queries at 900px, 700px and 480px. On smaller screens, grids collapse to one column, navigation stacks vertically, and buttons become easier to tap. Headless Edge screenshots were generated locally for desktop and narrow viewport evidence.
 
-### Thank You Page
+## Screenshot Evidence
 
-A confirmation page that appears after the user submits the contact form.
+Screenshots were generated locally with Microsoft Edge headless on 10 May 2026. Desktop screenshots used a 1366px wide viewport. Narrow screenshots used a 500px wide viewport to evidence the responsive single-column layout.
 
-The contact form redirects to **thankyou.html**, confirming that the message was successfully submitted.
+| Page | Desktop evidence | Narrow evidence |
+| --- | --- | --- |
+| Home | [index-desktop.png](docs/evidence/screenshots/index-desktop.png) | [index-narrow.png](docs/evidence/screenshots/index-narrow.png) |
+| Classes | [classes-desktop.png](docs/evidence/screenshots/classes-desktop.png) | [classes-narrow.png](docs/evidence/screenshots/classes-narrow.png) |
+| Trainers | [trainers-desktop.png](docs/evidence/screenshots/trainers-desktop.png) | [trainers-narrow.png](docs/evidence/screenshots/trainers-narrow.png) |
+| Membership | [membership-desktop.png](docs/evidence/screenshots/membership-desktop.png) | [membership-narrow.png](docs/evidence/screenshots/membership-narrow.png) |
+| Contact | [contact-desktop.png](docs/evidence/screenshots/contact-desktop.png) | [contact-narrow.png](docs/evidence/screenshots/contact-narrow.png) |
+| Thank You | [thankyou-desktop.png](docs/evidence/screenshots/thankyou-desktop.png) | [thankyou-narrow.png](docs/evidence/screenshots/thankyou-narrow.png) |
 
----
+Manual mobile screenshots at 390px width should be captured in browser developer tools before final submission if required by the assessor.
 
-## Navigation
+## Validation Evidence
 
-The navigation menu appears on every page so users can move easily between sections of the website.
+Renamed evidence files are stored in `assets/`:
 
-Navigation links include:
+| Evidence | File |
+| --- | --- |
+| HTML validator - classes | [html-validator-classes.html](assets/html-validator-classes.html) |
+| HTML validator - contact | [html-validator-contact.html](assets/html-validator-contact.html) |
+| HTML validator - index | [html-validator-index.html](assets/html-validator-index.html) |
+| HTML validator - membership | [html-validator-membership.html](assets/html-validator-membership.html) |
+| HTML validator - trainers | [html-validator-trainers.html](assets/html-validator-trainers.html) |
+| CSS validator | [w3c-css-validator-style-css.html](assets/w3c-css-validator-style-css.html) |
 
-* Home
-* Classes
-* Trainers
-* Membership
-* Contact
+The existing saved validator exports for `index.html` and `trainers.html` show the original article-heading warnings from before this resubmission fix. The source HTML has now been corrected by changing those quote-only testimonial cards to `div` elements. Fresh W3C HTML validation exports should be generated and replace those two files before final submission.
 
-The footer also includes quick links and social media links.
+The previous CSS validator warning about deprecated `clip` was fixed by replacing it with `clip-path: inset(50%)`. A possible warning about matching button background and border colours is a harmless design choice for solid buttons, but the current stylesheet should still be re-run through the W3C CSS Validator before submission.
 
----
+## Testing
 
-## Images
+Detailed manual and resubmission testing evidence is documented in [docs/testing.md](docs/testing.md).
 
-Images used on the website were sourced from **Pexels**, which provides free stock photography.
+Testing stages:
 
-Images were selected to reflect a friendly and welcoming gym environment.
+* Code inspection and repository audit.
+* Static searches for old contrast colours, focus selectors, missing `rel` attributes and external links.
+* Local screenshot generation with Microsoft Edge headless.
+* Manual testing matrix prepared for browser, keyboard, validator and Lighthouse checks.
+* Final official W3C validation and Lighthouse checks to be completed manually because this environment does not include local W3C validator or Lighthouse tooling.
 
-All images include **alt text descriptions** to improve accessibility and ensure screen readers can describe the images.
+## Bugs and Fixes
 
----
+| Issue | Fix | Status |
+| --- | --- | --- |
+| Button and active navigation blue did not meet 4.5:1 contrast with white text. | Replaced `#2f80ed` with `#005ea8` for normal interactive text states. | Fixed |
+| Hover blue needed to remain readable. | Added darker hover blue `#004b8d`. | Fixed |
+| Keyboard focus was not consistently visible. | Added `:focus-visible` styles for navigation, buttons, links and form controls. | Fixed |
+| Quote-only testimonial cards used `article` without headings. | Changed those cards to `div` in `index.html` and `trainers.html`. | Fixed |
+| Contact footer external links opened new tabs without `rel`. | Added `rel="noopener noreferrer"` to all `target="_blank"` social links. | Fixed |
+| Evidence filenames used spaces, capitals, brackets and special characters. | Renamed evidence files to lower-case hyphenated filenames and updated README links. | Fixed |
+| Official post-fix W3C and Lighthouse evidence cannot be produced locally here. | Added manual instructions and evidence locations. | To be completed manually |
+
+## Deployment
+
+The project is deployed using GitHub Pages from the `main` branch.
+
+Deployment steps:
+
+1. Push the final committed changes to GitHub.
+2. In the repository settings, open Pages.
+3. Confirm the source is the `main` branch.
+4. Wait for GitHub Pages to rebuild.
+5. Open the live URL and verify each page loads.
+
+Live website:
+
+https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/
+
+## Development Lifecycle
+
+The project followed a user-centred frontend workflow:
+
+1. Planning: define the gym concept, target users, site goals, sitemap and wireframes.
+2. Structure: build static HTML pages for the main user journeys.
+3. Styling: apply a friendly visual style, responsive grids and reusable card/button patterns.
+4. Content: add gym information, class details, trainer profiles, memberships and contact flow.
+5. Testing: check navigation, responsive layouts, form redirect, validation and accessibility.
+6. Resubmission refinement: address feedback on colour contrast, focus visibility, HTML semantics, external-link security, evidence filenames and documentation completeness.
+7. Final submission preparation: refresh official validator evidence, run Lighthouse, verify GitHub Pages and submit with a clean commit history.
 
 ## Technologies Used
 
-The project was built using:
-
 * HTML5
 * CSS3
-* Figma (planning and wireframes)
-* Git (version control)
-* GitHub (repository hosting)
-* GitHub Pages (deployment)
-
----
+* Git and GitHub
+* GitHub Pages
+* Figma for planning and wireframes
+* W3C validators for HTML and CSS validation
+* Microsoft Edge headless for local screenshot evidence
 
 ## Project Structure
 
-Main project files:
-
-```
+```text
 index.html
 classes.html
 trainers.html
@@ -166,157 +185,36 @@ contact.html
 thankyou.html
 
 css/
-   style.css
+  style.css
 
 images/
+  site images
 
 assets/
-   planning and validation evidence
+  planning and validation evidence
+
+docs/
+  evidence/screenshots/
+  testing.md
 ```
 
----
+## Future Improvements
 
-## Testing
-
-Testing was carried out throughout development to ensure the website works correctly.
-
-### Manual Testing
-
-Manual testing included checking:
-
-* navigation links between pages
-* layout and content display
-* contact form behaviour
-* redirection to the thank you page after form submission
-* image scaling and layout
-* responsive behaviour on different screen sizes
-
----
-
-### HTML Validation
-
-All HTML files were validated using the **W3C HTML Validator**.
-
-Files tested:
-
-* index.html
-* classes.html
-* trainers.html
-* membership.html
-* contact.html
-* thankyou.html
-
-After final corrections, **no validation errors were found**.
-
-Validator used:
-https://validator.w3.org/
-
----
-
-### CSS Validation
-
-The stylesheet **style.css** was validated using the **W3C CSS Validator**.
-
-Result:
-
-```
-Congratulations! No Error Found.
-This document validates as CSS level 3 + SVG.
-```
-
-Warnings reported:
-
-| Line | Issue                                                            |
-| ---- | ---------------------------------------------------------------- |
-| 101  | clip property deprecated                                         |
-| 232  | same colour used for background and border on button hover/focus |
-
-These warnings do not affect the layout or functionality of the website.
-
-Validator used:
-https://jigsaw.w3.org/css-validator/
-
----
-
-### Responsiveness Testing
-
-The website was tested using browser developer tools to ensure the layout works on:
-
-* mobile devices
-* tablets
-* desktop screens
-
-The layout adjusts correctly and remains readable across different screen sizes.
-
----
-
-### Bugs Found and Fixed
-
-During development a few small issues were identified and corrected:
-
-* incorrect image file extensions
-* spacing adjustments
-* navigation link updates
-* contact form updated to redirect to the thank you page
-
-No major bugs remain in the final version.
-
----
-
-## Future Features
-
-Possible future improvements include:
-
-* online class booking system
-* membership sign-up system
-* trainer profile pages
-* interactive class timetable
-* Google Maps integration on the contact page
-
----
-
-## Deployment
-
-The project was deployed using **GitHub Pages**.
-
-Steps used for deployment:
-
-1. The project repository was created on GitHub.
-2. GitHub Pages was enabled in repository settings.
-3. The site was deployed from the **main branch**.
-
-Live website:
-
-https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/
-
----
-
-## Version Control
-
-Git and GitHub were used to track changes throughout development.
-
-Commits were made regularly to document progress and updates.
-
----
+* Online class booking.
+* Membership sign-up flow.
+* Individual trainer profile pages.
+* Interactive timetable filtering.
+* Embedded map for the contact page.
 
 ## Credits
 
-### Images
+Images were sourced from Pexels: https://www.pexels.com/
 
-Images used on this website were sourced from:
+Validation tools:
 
-https://www.pexels.com/
-
-### Validation Tools
-
-HTML validation:
-https://validator.w3.org/
-
-CSS validation:
-https://jigsaw.w3.org/css-validator/
-
----
+* HTML Validator: https://validator.w3.org/
+* CSS Validator: https://jigsaw.w3.org/css-validator/
 
 ## Author
 
-Created by **Abdul Khoujja** for the **User Centric Frontend Development Milestone Project**.
+Created by Abdul Khoujja for the Code Institute User-Centric Frontend Development Milestone Project.
