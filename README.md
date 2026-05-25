@@ -36,6 +36,9 @@ Planning documents:
 * [Brief and Goals](assets/brief-and-goals.pdf)
 * [Sitemap / Information Architecture](assets/sitemap-ia.pdf)
 * [Wireframes](assets/wireframes.pdf)
+* [Resubmission checklist](RESUBMISSION_CHECKLIST.md)
+* [Final evidence status](EVIDENCE_STATUS.md)
+* [Final manual evidence steps](FINAL_MANUAL_STEPS.md)
 
 ## Website Features
 
@@ -93,7 +96,15 @@ Screenshots were generated locally with Microsoft Edge headless on 10 May 2026. 
 | Contact | [contact-desktop.png](docs/evidence/screenshots/contact-desktop.png) | [contact-narrow.png](docs/evidence/screenshots/contact-narrow.png) |
 | Thank You | [thankyou-desktop.png](docs/evidence/screenshots/thankyou-desktop.png) | [thankyou-narrow.png](docs/evidence/screenshots/thankyou-narrow.png) |
 
-Manual mobile screenshots at 390px width should be captured in browser developer tools before final submission if required by the assessor.
+Additional local evidence generated on 25 May 2026:
+
+* [Home 390px mobile screenshot](docs/evidence/screenshots/index-mobile-390.png)
+* [Contact 390px mobile screenshot](docs/evidence/screenshots/contact-mobile-390.png)
+* [Home 768px tablet screenshot](docs/evidence/screenshots/index-tablet-768.png)
+* [Visible focus state screenshot](docs/evidence/manual-testing/focus-visible-nav-local.png)
+* [Local evidence checks](docs/evidence/manual-testing/local-evidence-checks.md)
+
+Manual mobile screenshots at 390px width should still be repeated in browser developer tools before final submission if required by the assessor.
 
 ## Validation Evidence
 
@@ -108,9 +119,11 @@ Renamed evidence files are stored in `assets/`:
 | HTML validator - trainers | [html-validator-trainers.html](assets/html-validator-trainers.html) |
 | CSS validator | [w3c-css-validator-style-css.html](assets/w3c-css-validator-style-css.html) |
 
-The existing saved validator exports for `index.html` and `trainers.html` show the original article-heading warnings from before this resubmission fix. The source HTML has now been corrected by changing those quote-only testimonial cards to `div` elements. Fresh W3C HTML validation exports should be generated and replace those two files before final submission.
+The existing saved validator exports for `index.html` and `trainers.html` show the original article-heading warnings from before this resubmission fix. The source HTML has now been corrected by changing those quote-only testimonial cards to `div` elements. Fresh W3C HTML validation exports should be generated and saved before final submission.
 
 The previous CSS validator warning about deprecated `clip` was fixed by replacing it with `clip-path: inset(50%)`. A possible warning about matching button background and border colours is a harmless design choice for solid buttons, but the current stylesheet should still be re-run through the W3C CSS Validator before submission.
+
+Current final evidence tracking is documented in [EVIDENCE_STATUS.md](EVIDENCE_STATUS.md), with the remaining manual tasks listed in [FINAL_MANUAL_STEPS.md](FINAL_MANUAL_STEPS.md). Fresh official evidence should be saved under [docs/evidence/](docs/evidence/), especially `docs/evidence/html-validation/`, `docs/evidence/css-validation/`, `docs/evidence/lighthouse/` and `docs/evidence/manual-testing/`.
 
 ## Testing
 
@@ -194,8 +207,14 @@ assets/
   planning and validation evidence
 
 docs/
-  evidence/screenshots/
+  evidence/
+    screenshots/
+    manual-testing/
   testing.md
+
+RESUBMISSION_CHECKLIST.md
+EVIDENCE_STATUS.md
+FINAL_MANUAL_STEPS.md
 ```
 
 ## Future Improvements

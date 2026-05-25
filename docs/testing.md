@@ -4,6 +4,13 @@ Testing date: 10 May 2026
 
 This file records the checks completed during the resubmission preparation and the manual checks still required before final submission. Results are not invented: where this environment cannot run an official browser audit, W3C validator check or Lighthouse report, the row is marked as manual follow-up.
 
+Final evidence audit files:
+
+* [Resubmission checklist](../RESUBMISSION_CHECKLIST.md)
+* [Final evidence status](../EVIDENCE_STATUS.md)
+* [Final manual evidence steps](../FINAL_MANUAL_STEPS.md)
+* [Evidence folder](evidence/)
+
 ## Manual Testing Matrix
 
 | Page or area | Test action | Expected result | Actual result | Status | Date |
@@ -17,9 +24,10 @@ This file records the checks completed during the resubmission preparation and t
 | Internal links | Inspect internal page links and navigation hrefs. | Internal links point to existing local HTML files. | Source inspection completed; no missing internal page targets found. | Pass - code check | 10 May 2026 |
 | External links | Search for social links using `target="_blank"`. | Every new-tab external link includes `rel="noopener noreferrer"`. | `rg "target"` confirmed all social links include the security attributes. | Pass - code check | 10 May 2026 |
 | Responsive layout | Capture desktop and narrow screenshots. | Content remains readable and layouts collapse appropriately. | Screenshots generated in `docs/evidence/screenshots/`. | Pass - screenshot evidence | 10 May 2026 |
-| 390px mobile layout | Test in browser developer tools at 390px width. | No horizontal scrolling, text clipping or overlapping content. | To be completed manually because the headless 390px capture cropped the viewport in this environment. | Manual follow-up | 10 May 2026 |
-| Keyboard navigation | Tab through header, buttons, links and form controls. | Focus order is logical and every focused item has a visible indicator. | `:focus-visible` styles added; browser tab-through still needs manual confirmation. | Manual follow-up | 10 May 2026 |
-| Visible focus states | Check nav links, buttons, form controls and footer links. | Focus styles are clear on light and dark backgrounds. | CSS contains explicit focus styles; manual visual check remains required. | Manual follow-up | 10 May 2026 |
+| 390px mobile layout | Capture home and contact at 390px width. | No horizontal scrolling, text clipping or overlapping content is visible in the captured viewport. | Local Edge screenshots added: `index-mobile-390.png` and `contact-mobile-390.png`; manual DevTools confirmation is still recommended. | Pass - local screenshot evidence | 25 May 2026 |
+| Tablet layout | Capture home page at tablet width. | Layout remains readable at tablet width. | Local Edge screenshot added: `index-tablet-768.png`. | Pass - local screenshot evidence | 25 May 2026 |
+| Keyboard navigation | Tab through header, buttons, links and form controls. | Focus order is logical and every focused item has a visible indicator. | `:focus-visible` styles added and one local focused-nav screenshot captured; full browser tab-through still needs manual confirmation. | Manual follow-up | 25 May 2026 |
+| Visible focus states | Check nav links, buttons, form controls and footer links. | Focus styles are clear on light and dark backgrounds. | `focus-visible-nav-local.png` shows the Classes nav link focused; manual visual check across all controls remains recommended. | Pass - local evidence | 25 May 2026 |
 | Colour contrast | Compare old and new button/nav/link colours. | Normal interactive text meets at least 4.5:1 contrast. | `#005ea8` on white is 6.63:1; `#004b8d` on white is 8.78:1. | Pass - contrast check | 10 May 2026 |
 | HTML validation | Validate each HTML file using W3C Nu Html Checker. | No errors or warnings after fixes. | Existing saved exports are old for `index.html` and `trainers.html`; fresh validation must be run manually. | Manual follow-up | 10 May 2026 |
 | CSS validation | Validate `css/style.css` using W3C CSS Validator. | No errors; any warnings documented. | Deprecated `clip` warning fixed; fresh official CSS validation must be run manually. | Manual follow-up | 10 May 2026 |
@@ -39,6 +47,16 @@ Desktop and narrow viewport screenshots were produced with Microsoft Edge headle
 | Contact | `contact-desktop.png` | `contact-narrow.png` |
 | Thank You | `thankyou-desktop.png` | `thankyou-narrow.png` |
 
+Additional evidence generated on 25 May 2026:
+
+| Check | File |
+| --- | --- |
+| Home at 390px | `index-mobile-390.png` |
+| Contact at 390px | `contact-mobile-390.png` |
+| Home at 768px tablet width | `index-tablet-768.png` |
+| Focus-visible navigation state | `evidence/manual-testing/focus-visible-nav-local.png` |
+| Local source/link/form checks | `evidence/manual-testing/local-evidence-checks.md` |
+
 ## Local Static Checks Run
 
 The following local checks were run during the resubmission work:
@@ -57,10 +75,10 @@ Before final resubmission:
 
 1. Open https://validator.w3.org/nu/.
 2. Validate `index.html`, `classes.html`, `trainers.html`, `membership.html`, `contact.html` and `thankyou.html`.
-3. Save each result into `assets/` using lower-case hyphenated filenames, for example `html-validator-thankyou.html`.
-4. Replace the old `index` and `trainers` validator exports with fresh post-fix exports.
+3. Save each result into `docs/evidence/html-validation/` using lower-case hyphenated filenames, for example `html-validation-thankyou.html`.
+4. Treat the old `assets/` validator exports as legacy evidence only after the fresh post-fix exports are saved.
 5. Open https://jigsaw.w3.org/css-validator/.
-6. Validate `css/style.css` and save the updated result as `assets/w3c-css-validator-style-css.html`.
+6. Validate `css/style.css` and save the updated result as `docs/evidence/css-validation/css-validation-style-css.html`.
 7. If the CSS validator reports a warning about matching button background and border colours, document it as harmless because the solid button design intentionally uses the same colour for fill and border.
 
 ## Lighthouse Follow-Up Instructions
@@ -69,7 +87,7 @@ Before final resubmission:
 
 1. Open the deployed GitHub Pages URL in Chrome or Edge.
 2. Open DevTools and run Lighthouse for mobile and desktop.
-3. Save screenshots or exported reports in `docs/evidence/`.
+3. Save screenshots or exported reports in `docs/evidence/lighthouse/`.
 4. Add the scores and any actions taken to this file.
 
 ## Bugs and Fixes
