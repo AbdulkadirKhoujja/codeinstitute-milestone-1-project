@@ -1,12 +1,12 @@
 # HTML Validation Evidence
 
-Save fresh official W3C Nu Html Checker exports for the current HTML files in this folder.
+Fresh official W3C Nu Html Checker evidence was generated on 25 May 2026.
 
-Expected filenames:
+Files:
 
-* `html-validation-index.html`
-* `html-validation-classes.html`
-* `html-validation-trainers.html`
-* `html-validation-membership.html`
-* `html-validation-contact.html`
-* `html-validation-thankyou.html`
+* `w3c-html-index.txt`
+* `w3c-html-classes.txt`
+* `w3c-html-trainers.txt`
+* `w3c-html-membership.txt`
+* `w3c-html-contact.txt`
+* `w3c-html-thankyou.txt`

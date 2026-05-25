@@ -1,0 +1,32 @@
+Keyboard tab-through and focus evidence
+Generated: 2026-05-25T15:07:29.593Z
+Pages tested: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/ and https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/contact.html
+Action performed: used browser keyboard Tab events in Edge headless automation across homepage navigation/buttons and contact form controls.
+Expected result: focus moves through interactive controls, focus is visible, and no keyboard trap is encountered.
+
+Homepage focus sequence:
+1. A CommunityFit Gym focus-visible=true
+2. A Home focus-visible=true
+3. A Classes focus-visible=true
+4. A Trainers focus-visible=true
+5. A Membership focus-visible=true
+6. A Contact focus-visible=true
+7. A View Memberships focus-visible=true
+8. A Explore Classes focus-visible=true
+9. A See full class schedule focus-visible=true
+10. A Learn more about our trainers focus-visible=true
+
+Contact page focus sequence until first form field:
+1. A CommunityFit Gym focus-visible=true
+2. A Home focus-visible=true
+3. A Classes focus-visible=true
+4. A Trainers focus-visible=true
+5. A Membership focus-visible=true
+6. A Contact focus-visible=true
+7. INPUT#name  focus-visible=true
+
+Visible focus found on homepage link/button: yes
+Visible focus found on contact form field: yes
+Keyboard trap found in sampled sequence: no
+Pass/fail: PASS
+Screenshot: keyboard-focus-check.png

@@ -1,0 +1,13 @@
+GitHub Pages live-site check
+Generated: 2026-05-25T14:44:59.358Z
+Expected result: each page returns HTTP 200 and contains CommunityFit Gym page content.
+Actual result:
+
+- Home: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/ - HTTP 200 - PASS
+- Classes: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/classes.html - HTTP 200 - PASS
+- Trainers: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/trainers.html - HTTP 200 - PASS
+- Membership: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/membership.html - HTTP 200 - PASS
+- Contact: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/contact.html - HTTP 200 - PASS
+- Thank You: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/thankyou.html - HTTP 200 - PASS
+
+Overall result: PASS

@@ -1,8 +1,12 @@
 # Lighthouse Evidence
 
-Save fresh Lighthouse desktop and mobile reports or screenshots for the live GitHub Pages site in this folder.
+Fresh Lighthouse reports were generated on 25 May 2026 against the live GitHub Pages homepage.
 
-Expected filenames:
+Files:
 
-* `lighthouse-desktop.png` or `lighthouse-desktop.html`
-* `lighthouse-mobile.png` or `lighthouse-mobile.html`
+* `lighthouse-desktop-report.html`
+* `lighthouse-desktop-report.json`
+* `lighthouse-desktop-summary.txt`
+* `lighthouse-mobile-report.html`
+* `lighthouse-mobile-report.json`
+* `lighthouse-mobile-summary.txt`

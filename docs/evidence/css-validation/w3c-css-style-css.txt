@@ -1,0 +1,16 @@
+﻿Official W3C CSS Validator validation
+Endpoint: https://jigsaw.w3.org/css-validator/validator
+Validated file: css/style.css
+Validation method: multipart upload of current local stylesheet contents
+HTTP status: 200
+Generated: 2026-05-25T14:43:26.755Z
+
+Result: PASS - no CSS errors reported
+Errors: 0
+Warnings: 1
+
+Errors reported: none
+
+Warnings reported:
+1. line 240: Same color for background-color and border-color
+

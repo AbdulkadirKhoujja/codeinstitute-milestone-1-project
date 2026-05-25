@@ -2,45 +2,47 @@
 
 Audit date: 25 May 2026
 
-This audit separates evidence already present in the repo from checks that still need official manual evidence. Local screenshots and source checks are useful supporting evidence, but they do not replace fresh W3C validation, Lighthouse, browser DevTools checks or live GitHub Pages verification.
+This audit records evidence that was actually generated or verified. No official W3C, Lighthouse or live-site result is marked complete unless the tool was run and evidence was saved.
 
 ## Evidence Status Table
 
 | Evidence requirement | Required by feedback? | Evidence found? | Evidence file/location | Current status | Action needed |
 | --- | --- | --- | --- | --- | --- |
-| Git status and recent commit history checked | Yes | Yes | Terminal audit on 25 May 2026 | Complete | None. Repo started clean on `main...origin/main`; recent commits show resubmission fixes and testing docs. |
-| Evidence folder root | Yes | Yes | `docs/evidence/` | Complete | None. |
-| HTML validation folder | Yes | Folder added, no official evidence files yet | `docs/evidence/html-validation/readme.md` | Needs manual official evidence | Save fresh W3C Nu Html Checker exports in this folder. |
-| CSS validation folder | Yes | Folder added, no official evidence file yet | `docs/evidence/css-validation/readme.md` | Needs manual official evidence | Save fresh W3C CSS Validator export in this folder. |
-| Lighthouse folder | Yes | Folder added, no official evidence files yet | `docs/evidence/lighthouse/readme.md` | Needs manual official evidence | Save desktop and mobile Lighthouse evidence in this folder. |
-| Screenshots folder | Yes | Yes | `docs/evidence/screenshots/` | Complete | None for local screenshot support. |
-| Manual testing folder | Yes | Yes | `docs/evidence/manual-testing/focus-visible-nav-local.png`; `docs/evidence/manual-testing/local-evidence-checks.md` | Complete locally, official check still recommended | Complete final hands-on keyboard and form checks in browser before contacting the lecturer. |
-| HTML validation: `index.html` | Yes | Yes, but old/unclear | `assets/html-validator-index.html` | Needs replacement because old/unclear | Re-run official W3C Nu Html Checker after the article-heading fix and save fresh evidence. |
-| HTML validation: `classes.html` | Yes | Yes, but stored as legacy asset | `assets/html-validator-classes.html` | Needs manual official evidence | Re-run official W3C Nu Html Checker against the current file and save fresh evidence. |
-| HTML validation: `trainers.html` | Yes | Yes, but old/unclear | `assets/html-validator-trainers.html` | Needs replacement because old/unclear | Re-run official W3C Nu Html Checker after the article-heading fix and save fresh evidence. |
-| HTML validation: `membership.html` | Yes | Yes, but stored as legacy asset | `assets/html-validator-membership.html` | Needs manual official evidence | Re-run official W3C Nu Html Checker against the current file and save fresh evidence. |
-| HTML validation: `contact.html` | Yes | Yes, but stored as legacy asset | `assets/html-validator-contact.html` | Needs manual official evidence | Re-run official W3C Nu Html Checker against the current file and save fresh evidence. |
-| HTML validation: `thankyou.html` | Yes | No | No saved W3C export found | Missing | Run official W3C Nu Html Checker and save fresh evidence. |
-| Local article-heading source check | Yes | Yes | Local audit command output; `index.html`; `trainers.html` | Complete locally, official check still recommended | Official W3C replacement still needed for final evidence. |
-| CSS validation: `css/style.css` | Yes | Yes, but old/unclear | `assets/w3c-css-validator-style-css.html` | Needs replacement because old/unclear | Re-run official W3C CSS Validator because the saved export still shows the old deprecated `clip` warning. |
-| Local CSS syntax/safety check | Yes | Yes | Local audit command output; `css/style.css` | Complete locally, official check still recommended | Official CSS Validator replacement still needed. |
-| Lighthouse desktop evidence | Yes | No | No desktop Lighthouse report or screenshot found | Missing | Run Lighthouse desktop on the live GitHub Pages site and save evidence. |
-| Lighthouse mobile evidence | Yes | No | No mobile Lighthouse report or screenshot found | Missing | Run Lighthouse mobile on the live GitHub Pages site and save evidence. |
-| Desktop responsive screenshot | Yes | Yes | `docs/evidence/screenshots/index-desktop.png` plus desktop screenshots for all pages | Complete | None for local desktop screenshot support. |
-| 390px mobile home screenshot | Yes | Yes | `docs/evidence/screenshots/index-mobile-390.png` | Complete locally, official check still recommended | Also confirm in browser DevTools if the lecturer expects manual DevTools evidence. |
-| 390px mobile contact screenshot | Yes | Yes | `docs/evidence/screenshots/contact-mobile-390.png` | Complete locally, official check still recommended | Also confirm in browser DevTools if the lecturer expects manual DevTools evidence. |
-| Tablet screenshot | Recommended | Yes | `docs/evidence/screenshots/index-tablet-768.png` | Complete locally, official check still recommended | None unless broader tablet page evidence is requested. |
-| Keyboard tab/focus evidence | Yes | Partial | `docs/evidence/manual-testing/focus-visible-nav-local.png`; `css/style.css` | Complete locally, official check still recommended | Manually tab through the live/local site and save a short note or screenshot if required. |
-| Visible focus states evidence | Yes | Yes, local | `docs/evidence/manual-testing/focus-visible-nav-local.png`; `css/style.css` | Complete locally, official check still recommended | Manual browser confirmation still recommended. |
-| Contact form redirects to `thankyou.html` | Yes | Partial | `contact.html`; `docs/evidence/screenshots/thankyou-desktop.png`; `docs/evidence/manual-testing/local-evidence-checks.md` | Complete locally, official check still recommended | Submit the form manually in a browser and save evidence if required. |
-| External links using `target="_blank"` include safe `rel` | Yes | Yes | Local audit command output; all HTML footers | Complete | None. |
-| Old failing `#2f80ed` not used in CSS | Yes | Yes | Local audit command output; `css/style.css` | Complete | None. |
-| GitHub Pages live evidence | Yes | README has URL only | `README.md` | Needs manual official evidence | After pushing, open the live GitHub Pages site and save evidence. |
-| README links and evidence links | Yes | Yes, updated | `README.md`; `docs/testing.md` | Complete locally, official check still recommended | Re-check after adding final manual evidence files. |
+| Git status and recent commit history checked | Yes | Yes | Terminal audit on 25 May 2026 | Complete with automated browser evidence | None. |
+| Audit commit pushed | Yes | Yes | `836ce89 docs: audit final resubmission evidence` pushed to `origin/main` | Complete with automated browser evidence | None. |
+| Evidence folder root | Yes | Yes | `docs/evidence/` | Complete with automated browser evidence | None. |
+| HTML validation folder | Yes | Yes | `docs/evidence/html-validation/` | Complete with official evidence | None. |
+| CSS validation folder | Yes | Yes | `docs/evidence/css-validation/` | Complete with official evidence | None. |
+| Lighthouse folder | Yes | Yes | `docs/evidence/lighthouse/` | Complete with automated browser evidence | None. |
+| Screenshots folder | Yes | Yes | `docs/evidence/screenshots/` | Complete with automated browser evidence | None. |
+| Manual testing folder | Yes | Yes | `docs/evidence/manual-testing/` | Complete with automated browser evidence | None. |
+| HTML validation: `index.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-index.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| HTML validation: `classes.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-classes.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| HTML validation: `trainers.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-trainers.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| HTML validation: `membership.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-membership.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| HTML validation: `contact.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-contact.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| HTML validation: `thankyou.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-thankyou.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| Local article-heading source check | Yes | Yes | `docs/evidence/manual-testing/local-evidence-checks.md` | Complete with local validation evidence | None. Source check confirmed 0 `article` elements without headings. |
+| CSS validation: `css/style.css` | Yes | Yes | `docs/evidence/css-validation/w3c-css-style-css.txt` | Complete with official evidence | None. Official W3C CSS Validator reported 0 errors and 1 documented warning about matching button background and border colour. |
+| Local CSS syntax/safety check | Yes | Yes | `docs/evidence/manual-testing/local-evidence-checks.md` | Complete with local validation evidence | None. |
+| Lighthouse desktop evidence | Yes | Yes | `docs/evidence/lighthouse/lighthouse-desktop-report.html`; `docs/evidence/lighthouse/lighthouse-desktop-summary.txt` | Complete with automated browser evidence | None. Scores: Performance 87, Accessibility 100, Best Practices 96, SEO 100. |
+| Lighthouse mobile evidence | Yes | Yes | `docs/evidence/lighthouse/lighthouse-mobile-report.html`; `docs/evidence/lighthouse/lighthouse-mobile-summary.txt` | Complete with automated browser evidence | None. Scores: Performance 85, Accessibility 100, Best Practices 96, SEO 100. |
+| Desktop responsive screenshot | Yes | Yes | `docs/evidence/screenshots/index-desktop.png` plus desktop screenshots for all pages | Complete with automated browser evidence | None. |
+| 390px mobile home screenshot | Yes | Yes | `docs/evidence/screenshots/index-mobile-390.png` | Complete with automated browser evidence | None. |
+| 390px mobile contact screenshot | Yes | Yes | `docs/evidence/screenshots/contact-mobile-390.png` | Complete with automated browser evidence | None. |
+| Tablet screenshot | Recommended | Yes | `docs/evidence/screenshots/index-tablet-768.png` | Complete with automated browser evidence | None. |
+| Keyboard tab/focus evidence | Yes | Yes | `docs/evidence/manual-testing/keyboard-focus-check.png`; `docs/evidence/manual-testing/keyboard-focus-check.txt` | Complete with automated browser evidence | None. |
+| Visible focus states evidence | Yes | Yes | `docs/evidence/manual-testing/focus-visible-nav-local.png`; `docs/evidence/manual-testing/keyboard-focus-check.png` | Complete with automated browser evidence | None. |
+| Contact form redirects to `thankyou.html` | Yes | Yes | `docs/evidence/manual-testing/contact-form-redirect.png`; `docs/evidence/manual-testing/contact-form-redirect.txt` | Complete with automated browser evidence | None. |
+| External links using `target="_blank"` include safe `rel` | Yes | Yes | `docs/evidence/manual-testing/local-evidence-checks.md` | Complete with local validation evidence | None. |
+| Old failing `#2f80ed` not used in CSS | Yes | Yes | `docs/evidence/manual-testing/local-evidence-checks.md`; `css/style.css` | Complete with local validation evidence | None. |
+| GitHub Pages live evidence | Yes | Yes | `docs/evidence/screenshots/github-pages-live-home.png`; `docs/evidence/screenshots/github-pages-live-check.txt` | Complete with automated browser evidence | None. Live Home, Classes, Trainers, Membership, Contact and Thank You pages returned HTTP 200. |
+| README links and evidence links | Yes | Yes | `README.md`; `docs/testing.md`; markdown link check output | Complete with local validation evidence | None. |
 
 ## Audit Notes
 
-- Existing W3C HTML exports for `index.html` and `trainers.html` are not final evidence because they still show article-heading warnings that the source code has since been fixed for.
-- Existing CSS validator evidence is not final evidence because it still records the old deprecated `clip` warning, while the current stylesheet uses `clip-path: inset(50%)`.
-- No Lighthouse evidence was found.
-- Local Edge screenshots were added on 25 May 2026 for 390px home, 390px contact, tablet home and visible focus support.
+- The legacy validator exports in `assets/` are retained as older evidence only. The final evidence is now stored under `docs/evidence/`.
+- Official W3C HTML validation was completed through the W3C Nu Html Checker endpoint using the current local file contents.
+- Official W3C CSS validation was completed through the W3C CSS Validator endpoint using the current stylesheet.
+- Lighthouse desktop and mobile reports were generated against the live GitHub Pages homepage.
+- Browser evidence was generated with Microsoft Edge headless against the live GitHub Pages site.

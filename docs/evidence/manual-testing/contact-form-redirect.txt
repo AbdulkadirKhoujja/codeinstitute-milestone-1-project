@@ -1,0 +1,8 @@
+Contact form redirect evidence
+Generated: 2026-05-25T15:05:29.965Z
+Page tested: https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/contact.html
+Action performed: filled required name, email and message fields, added a subject, then submitted the form in Edge headless automation.
+Expected result: browser redirects to thankyou.html.
+Actual result: Browser redirected to https://abdulkadirkhoujja.github.io/codeinstitute-milestone-1-project/thankyou.html?name=Evidence+Test+User&email=evidence%40example.com&subject=Resubmission+evidence+test&message=Testing+that+the+contact+form+redirects+to+the+thank+you+page.
+Pass/fail: PASS
+Screenshot: contact-form-redirect.png

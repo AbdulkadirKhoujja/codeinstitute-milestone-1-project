@@ -1,7 +1,9 @@
 # CSS Validation Evidence
 
-Save the fresh official W3C CSS Validator export for the current stylesheet in this folder.
+Fresh official W3C CSS Validator evidence was generated on 25 May 2026.
 
-Expected filename:
+File:
 
-* `css-validation-style-css.html`
+* `w3c-css-style-css.txt`
+
+The validator reported 0 errors and 1 warning about matching solid button background and border colours.

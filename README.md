@@ -101,29 +101,41 @@ Additional local evidence generated on 25 May 2026:
 * [Home 390px mobile screenshot](docs/evidence/screenshots/index-mobile-390.png)
 * [Contact 390px mobile screenshot](docs/evidence/screenshots/contact-mobile-390.png)
 * [Home 768px tablet screenshot](docs/evidence/screenshots/index-tablet-768.png)
+* [Live GitHub Pages homepage screenshot](docs/evidence/screenshots/github-pages-live-home.png)
+* [Live GitHub Pages page-load check](docs/evidence/screenshots/github-pages-live-check.txt)
 * [Visible focus state screenshot](docs/evidence/manual-testing/focus-visible-nav-local.png)
+* [Keyboard focus check](docs/evidence/manual-testing/keyboard-focus-check.txt)
+* [Contact form redirect check](docs/evidence/manual-testing/contact-form-redirect.txt)
 * [Local evidence checks](docs/evidence/manual-testing/local-evidence-checks.md)
-
-Manual mobile screenshots at 390px width should still be repeated in browser developer tools before final submission if required by the assessor.
 
 ## Validation Evidence
 
-Renamed evidence files are stored in `assets/`:
+Fresh official validation evidence generated on 25 May 2026:
 
 | Evidence | File |
 | --- | --- |
-| HTML validator - classes | [html-validator-classes.html](assets/html-validator-classes.html) |
-| HTML validator - contact | [html-validator-contact.html](assets/html-validator-contact.html) |
-| HTML validator - index | [html-validator-index.html](assets/html-validator-index.html) |
-| HTML validator - membership | [html-validator-membership.html](assets/html-validator-membership.html) |
-| HTML validator - trainers | [html-validator-trainers.html](assets/html-validator-trainers.html) |
-| CSS validator | [w3c-css-validator-style-css.html](assets/w3c-css-validator-style-css.html) |
+| W3C HTML - index | [w3c-html-index.txt](docs/evidence/html-validation/w3c-html-index.txt) |
+| W3C HTML - classes | [w3c-html-classes.txt](docs/evidence/html-validation/w3c-html-classes.txt) |
+| W3C HTML - trainers | [w3c-html-trainers.txt](docs/evidence/html-validation/w3c-html-trainers.txt) |
+| W3C HTML - membership | [w3c-html-membership.txt](docs/evidence/html-validation/w3c-html-membership.txt) |
+| W3C HTML - contact | [w3c-html-contact.txt](docs/evidence/html-validation/w3c-html-contact.txt) |
+| W3C HTML - thankyou | [w3c-html-thankyou.txt](docs/evidence/html-validation/w3c-html-thankyou.txt) |
+| W3C CSS - style.css | [w3c-css-style-css.txt](docs/evidence/css-validation/w3c-css-style-css.txt) |
 
-The existing saved validator exports for `index.html` and `trainers.html` show the original article-heading warnings from before this resubmission fix. The source HTML has now been corrected by changing those quote-only testimonial cards to `div` elements. Fresh W3C HTML validation exports should be generated and saved before final submission.
+The final W3C HTML evidence reports 0 errors and 0 warnings for all six HTML pages. The final W3C CSS evidence reports 0 errors and 1 warning about matching solid button background and border colours, which is an intentional design choice for filled buttons.
 
-The previous CSS validator warning about deprecated `clip` was fixed by replacing it with `clip-path: inset(50%)`. A possible warning about matching button background and border colours is a harmless design choice for solid buttons, but the current stylesheet should still be re-run through the W3C CSS Validator before submission.
+Legacy validator exports are still stored in `assets/`, but the final resubmission evidence is under `docs/evidence/`.
 
-Current final evidence tracking is documented in [EVIDENCE_STATUS.md](EVIDENCE_STATUS.md), with the remaining manual tasks listed in [FINAL_MANUAL_STEPS.md](FINAL_MANUAL_STEPS.md). Fresh official evidence should be saved under [docs/evidence/](docs/evidence/), especially `docs/evidence/html-validation/`, `docs/evidence/css-validation/`, `docs/evidence/lighthouse/` and `docs/evidence/manual-testing/`.
+Current final evidence tracking is documented in [EVIDENCE_STATUS.md](EVIDENCE_STATUS.md). [FINAL_MANUAL_STEPS.md](FINAL_MANUAL_STEPS.md) confirms there are no remaining manual evidence tasks before lecturer review.
+
+## Lighthouse Evidence
+
+Lighthouse was run against the live GitHub Pages homepage on 25 May 2026.
+
+| Mode | Report | Performance | Accessibility | Best Practices | SEO |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Desktop | [lighthouse-desktop-report.html](docs/evidence/lighthouse/lighthouse-desktop-report.html) | 87 | 100 | 96 | 100 |
+| Mobile | [lighthouse-mobile-report.html](docs/evidence/lighthouse/lighthouse-mobile-report.html) | 85 | 100 | 96 | 100 |
 
 ## Testing
 
