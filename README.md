@@ -83,9 +83,35 @@ Other accessibility choices:
 
 The stylesheet uses responsive media queries at 900px, 700px and 480px. On smaller screens, grids collapse to one column, navigation stacks vertically, and buttons become easier to tap. Headless Edge screenshots were generated locally for desktop and narrow viewport evidence.
 
-## Screenshot Evidence
+## Resubmission Evidence
 
-Screenshots were generated locally with Microsoft Edge headless on 10 May 2026. Desktop screenshots used a 1366px wide viewport. Narrow screenshots used a 500px wide viewport to evidence the responsive single-column layout.
+The key resubmission evidence is embedded below so assessors can review the main visual proof directly in the README. Detailed validation, Lighthouse and testing reports remain linked where the evidence is stored as `.txt` or `.html` files.
+
+### Visual Evidence Summary
+
+Desktop homepage screenshot:
+
+![Home page desktop screenshot](docs/evidence/screenshots/index-desktop.png)
+
+Live GitHub Pages homepage screenshot:
+
+![Live GitHub Pages homepage screenshot](docs/evidence/screenshots/github-pages-live-home.png)
+
+### Responsive Screenshots
+
+Home page at 390px mobile width:
+
+![Home page 390px mobile screenshot](docs/evidence/screenshots/index-mobile-390.png)
+
+Home page at 768px tablet width:
+
+![Home page tablet screenshot](docs/evidence/screenshots/index-tablet-768.png)
+
+Contact page at 390px mobile width:
+
+![Contact page 390px mobile screenshot](docs/evidence/screenshots/contact-mobile-390.png)
+
+Desktop screenshots were generated locally with Microsoft Edge headless on 10 May 2026. Desktop screenshots used a 1366px wide viewport. Narrow screenshots used a 500px wide viewport to evidence the responsive single-column layout.
 
 | Page | Desktop evidence | Narrow evidence |
 | --- | --- | --- |
@@ -96,21 +122,19 @@ Screenshots were generated locally with Microsoft Edge headless on 10 May 2026. 
 | Contact | [contact-desktop.png](docs/evidence/screenshots/contact-desktop.png) | [contact-narrow.png](docs/evidence/screenshots/contact-narrow.png) |
 | Thank You | [thankyou-desktop.png](docs/evidence/screenshots/thankyou-desktop.png) | [thankyou-narrow.png](docs/evidence/screenshots/thankyou-narrow.png) |
 
-Additional local evidence generated on 25 May 2026:
+Additional responsive and live-site evidence generated on 25 May 2026:
 
 * [Home 390px mobile screenshot](docs/evidence/screenshots/index-mobile-390.png)
 * [Contact 390px mobile screenshot](docs/evidence/screenshots/contact-mobile-390.png)
 * [Home 768px tablet screenshot](docs/evidence/screenshots/index-tablet-768.png)
 * [Live GitHub Pages homepage screenshot](docs/evidence/screenshots/github-pages-live-home.png)
 * [Live GitHub Pages page-load check](docs/evidence/screenshots/github-pages-live-check.txt)
-* [Visible focus state screenshot](docs/evidence/manual-testing/focus-visible-nav-local.png)
-* [Keyboard focus check](docs/evidence/manual-testing/keyboard-focus-check.txt)
-* [Contact form redirect check](docs/evidence/manual-testing/contact-form-redirect.txt)
-* [Local evidence checks](docs/evidence/manual-testing/local-evidence-checks.md)
 
-## Validation Evidence
+### Validation Evidence
 
 Fresh official validation evidence generated on 25 May 2026:
+
+Detailed validator reports are linked below because the final W3C evidence is stored as text reports, not screenshots.
 
 | Evidence | File |
 | --- | --- |
@@ -128,14 +152,38 @@ Legacy validator exports are still stored in `assets/`, but the final resubmissi
 
 Current final evidence tracking is documented in [EVIDENCE_STATUS.md](EVIDENCE_STATUS.md). [FINAL_MANUAL_STEPS.md](FINAL_MANUAL_STEPS.md) confirms there are no remaining manual evidence tasks before lecturer review.
 
-## Lighthouse Evidence
+### Lighthouse Evidence
 
 Lighthouse was run against the live GitHub Pages homepage on 25 May 2026.
+
+Detailed Lighthouse reports are linked below because the final Lighthouse evidence is stored as `.html`, `.json` and summary text files, not screenshots.
 
 | Mode | Report | Performance | Accessibility | Best Practices | SEO |
 | --- | --- | ---: | ---: | ---: | ---: |
 | Desktop | [lighthouse-desktop-report.html](docs/evidence/lighthouse/lighthouse-desktop-report.html) | 87 | 100 | 96 | 100 |
 | Mobile | [lighthouse-mobile-report.html](docs/evidence/lighthouse/lighthouse-mobile-report.html) | 85 | 100 | 96 | 100 |
+
+Summary files:
+
+* [Desktop Lighthouse summary](docs/evidence/lighthouse/lighthouse-desktop-summary.txt)
+* [Mobile Lighthouse summary](docs/evidence/lighthouse/lighthouse-mobile-summary.txt)
+
+### Manual Testing Evidence
+
+Keyboard focus evidence:
+
+![Keyboard focus check screenshot](docs/evidence/manual-testing/keyboard-focus-check.png)
+
+Contact form redirect evidence:
+
+![Contact form redirect screenshot](docs/evidence/manual-testing/contact-form-redirect.png)
+
+Additional manual testing evidence:
+
+* [Visible focus state screenshot](docs/evidence/manual-testing/focus-visible-nav-local.png)
+* [Keyboard focus check note](docs/evidence/manual-testing/keyboard-focus-check.txt)
+* [Contact form redirect check note](docs/evidence/manual-testing/contact-form-redirect.txt)
+* [Local evidence checks](docs/evidence/manual-testing/local-evidence-checks.md)
 
 ## Testing
 
@@ -146,8 +194,8 @@ Testing stages:
 * Code inspection and repository audit.
 * Static searches for old contrast colours, focus selectors, missing `rel` attributes and external links.
 * Local screenshot generation with Microsoft Edge headless.
-* Manual testing matrix prepared for browser, keyboard, validator and Lighthouse checks.
-* Final official W3C validation and Lighthouse checks to be completed manually because this environment does not include local W3C validator or Lighthouse tooling.
+* Automated browser evidence for live GitHub Pages, contact form redirect and keyboard focus checks.
+* Final official W3C validation and Lighthouse checks completed and saved under `docs/evidence/`.
 
 ## Bugs and Fixes
 
@@ -159,7 +207,7 @@ Testing stages:
 | Quote-only testimonial cards used `article` without headings. | Changed those cards to `div` in `index.html` and `trainers.html`. | Fixed |
 | Contact footer external links opened new tabs without `rel`. | Added `rel="noopener noreferrer"` to all `target="_blank"` social links. | Fixed |
 | Evidence filenames used spaces, capitals, brackets and special characters. | Renamed evidence files to lower-case hyphenated filenames and updated README links. | Fixed |
-| Official post-fix W3C and Lighthouse evidence cannot be produced locally here. | Added manual instructions and evidence locations. | To be completed manually |
+| Final W3C, Lighthouse, live-site, form and keyboard evidence needed to be easy to review. | Added final evidence files and embedded the key visual evidence directly in the README. | Fixed |
 
 ## Deployment
 
