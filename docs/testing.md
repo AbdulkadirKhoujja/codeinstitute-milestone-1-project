@@ -60,6 +60,11 @@ Additional evidence generated on 25 May 2026:
 | Live GitHub Pages page-load note | `evidence/screenshots/github-pages-live-check.txt` |
 | Contact form redirect | `evidence/manual-testing/contact-form-redirect.png` and `evidence/manual-testing/contact-form-redirect.txt` |
 | Keyboard focus check | `evidence/manual-testing/keyboard-focus-check.png` and `evidence/manual-testing/keyboard-focus-check.txt` |
+| Wireframes preview | `evidence/planning/wireframes-preview.png` |
+| W3C HTML report screenshot | `evidence/html-validation/w3c-html-index-report-screenshot.png` |
+| W3C CSS report screenshot | `evidence/css-validation/w3c-css-style-css-screenshot.png` |
+| Lighthouse desktop screenshot | `evidence/lighthouse/lighthouse-desktop-screenshot.png` |
+| Lighthouse mobile screenshot | `evidence/lighthouse/lighthouse-mobile-screenshot.png` |
 
 ## Official Validation Evidence
 
@@ -67,13 +72,13 @@ Official W3C validation was completed on 25 May 2026 using the current project f
 
 | File | Evidence | Result |
 | --- | --- | --- |
-| `index.html` | `evidence/html-validation/w3c-html-index.txt` | 0 errors, 0 warnings |
+| `index.html` | `evidence/html-validation/w3c-html-index.txt`; `evidence/html-validation/w3c-html-index-report-screenshot.png` | 0 errors, 0 warnings |
 | `classes.html` | `evidence/html-validation/w3c-html-classes.txt` | 0 errors, 0 warnings |
 | `trainers.html` | `evidence/html-validation/w3c-html-trainers.txt` | 0 errors, 0 warnings |
 | `membership.html` | `evidence/html-validation/w3c-html-membership.txt` | 0 errors, 0 warnings |
 | `contact.html` | `evidence/html-validation/w3c-html-contact.txt` | 0 errors, 0 warnings |
 | `thankyou.html` | `evidence/html-validation/w3c-html-thankyou.txt` | 0 errors, 0 warnings |
-| `css/style.css` | `evidence/css-validation/w3c-css-style-css.txt` | 0 errors, 1 documented warning |
+| `css/style.css` | `evidence/css-validation/w3c-css-style-css.txt`; `evidence/css-validation/w3c-css-style-css-screenshot.png` | 0 errors, 1 documented warning |
 
 ## Lighthouse Evidence
 
@@ -81,8 +86,8 @@ Lighthouse was run against the live GitHub Pages homepage on 25 May 2026.
 
 | Mode | Report | Performance | Accessibility | Best Practices | SEO |
 | --- | --- | ---: | ---: | ---: | ---: |
-| Desktop | `evidence/lighthouse/lighthouse-desktop-report.html` | 87 | 100 | 96 | 100 |
-| Mobile | `evidence/lighthouse/lighthouse-mobile-report.html` | 85 | 100 | 96 | 100 |
+| Desktop | `evidence/lighthouse/lighthouse-desktop-report.html`; `evidence/lighthouse/lighthouse-desktop-screenshot.png` | 87 | 100 | 96 | 100 |
+| Mobile | `evidence/lighthouse/lighthouse-mobile-report.html`; `evidence/lighthouse/lighthouse-mobile-screenshot.png` | 85 | 100 | 96 | 100 |
 
 ## Local Static Checks Run
 

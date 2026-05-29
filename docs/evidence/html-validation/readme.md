@@ -10,3 +10,4 @@ Files:
 * `w3c-html-membership.txt`
 * `w3c-html-contact.txt`
 * `w3c-html-thankyou.txt`
+* `w3c-html-index-report-screenshot.png`

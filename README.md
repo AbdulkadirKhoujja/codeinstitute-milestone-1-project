@@ -25,11 +25,13 @@ The site is designed to help potential and current gym members quickly understan
 | As a user choosing support, I want to learn about trainers. | The trainers page introduces trainer profiles and coaching approach. | [Trainers desktop screenshot](docs/evidence/screenshots/trainers-desktop.png) |
 | As a user with a question, I want to contact the gym easily. | The contact page includes contact details, opening hours and a form. | [Contact desktop screenshot](docs/evidence/screenshots/contact-desktop.png) |
 | As a form user, I want confirmation after submitting. | The contact form redirects to `thankyou.html`. | [Thank you desktop screenshot](docs/evidence/screenshots/thankyou-desktop.png) |
-| As a mobile or narrow-screen user, I want content to remain readable. | Layouts collapse to single columns and navigation stacks on narrow screens. | [Narrow screenshots](#screenshot-evidence) |
+| As a mobile or narrow-screen user, I want content to remain readable. | Layouts collapse to single columns and navigation stacks on narrow screens. | [Responsive screenshots](#responsive-screenshots) |
 
 ## Design Decisions
 
 The design uses a calm blue palette, white cards, large headings and clear sections to support a friendly community gym identity. The structure is intentionally simple so users can scan the site without needing complex interactions.
+
+## Planning and Design Evidence
 
 Planning documents:
 
@@ -39,6 +41,12 @@ Planning documents:
 * [Resubmission checklist](RESUBMISSION_CHECKLIST.md)
 * [Final evidence status](EVIDENCE_STATUS.md)
 * [Final manual evidence steps](FINAL_MANUAL_STEPS.md)
+
+### Wireframes
+
+The original wireframes are stored at the exact lower-case path [assets/wireframes.pdf](assets/wireframes.pdf). A PNG preview was generated from that PDF so the wireframes can be reviewed directly in the README.
+
+![Wireframes preview generated from assets/wireframes.pdf](docs/evidence/planning/wireframes-preview.png)
 
 ## Website Features
 
@@ -134,7 +142,15 @@ Additional responsive and live-site evidence generated on 25 May 2026:
 
 Fresh official validation evidence generated on 25 May 2026:
 
-Detailed validator reports are linked below because the final W3C evidence is stored as text reports, not screenshots.
+Key validator result screenshots are embedded below. Detailed `.txt` validator reports are kept as linked evidence underneath.
+
+W3C HTML validator result screenshot for `index.html`:
+
+![W3C HTML validation result screenshot](docs/evidence/html-validation/w3c-html-index-report-screenshot.png)
+
+W3C CSS validator result screenshot for `css/style.css`:
+
+![W3C CSS validation result screenshot](docs/evidence/css-validation/w3c-css-style-css-screenshot.png)
 
 | Evidence | File |
 | --- | --- |
@@ -156,7 +172,15 @@ Current final evidence tracking is documented in [EVIDENCE_STATUS.md](EVIDENCE_S
 
 Lighthouse was run against the live GitHub Pages homepage on 25 May 2026.
 
-Detailed Lighthouse reports are linked below because the final Lighthouse evidence is stored as `.html`, `.json` and summary text files, not screenshots.
+Key Lighthouse screenshots are embedded below. Detailed Lighthouse reports remain linked as `.html`, `.json` and summary text files.
+
+Desktop Lighthouse report screenshot:
+
+![Desktop Lighthouse report screenshot](docs/evidence/lighthouse/lighthouse-desktop-screenshot.png)
+
+Mobile Lighthouse report screenshot:
+
+![Mobile Lighthouse report screenshot](docs/evidence/lighthouse/lighthouse-mobile-screenshot.png)
 
 | Mode | Report | Performance | Accessibility | Best Practices | SEO |
 | --- | --- | ---: | ---: | ---: | ---: |

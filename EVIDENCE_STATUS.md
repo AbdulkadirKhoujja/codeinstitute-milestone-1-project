@@ -11,22 +11,23 @@ This audit records evidence that was actually generated or verified. No official
 | Git status and recent commit history checked | Yes | Yes | Terminal audit on 25 May 2026 | Complete with automated browser evidence | None. |
 | Audit commit pushed | Yes | Yes | `836ce89 docs: audit final resubmission evidence` pushed to `origin/main` | Complete with automated browser evidence | None. |
 | Evidence folder root | Yes | Yes | `docs/evidence/` | Complete with automated browser evidence | None. |
+| Planning evidence folder | Recommended | Yes | `docs/evidence/planning/wireframes-preview.png` | Complete with generated visual evidence | None. |
 | HTML validation folder | Yes | Yes | `docs/evidence/html-validation/` | Complete with official evidence | None. |
 | CSS validation folder | Yes | Yes | `docs/evidence/css-validation/` | Complete with official evidence | None. |
 | Lighthouse folder | Yes | Yes | `docs/evidence/lighthouse/` | Complete with automated browser evidence | None. |
 | Screenshots folder | Yes | Yes | `docs/evidence/screenshots/` | Complete with automated browser evidence | None. |
 | Manual testing folder | Yes | Yes | `docs/evidence/manual-testing/` | Complete with automated browser evidence | None. |
-| HTML validation: `index.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-index.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
+| HTML validation: `index.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-index.txt`; `docs/evidence/html-validation/w3c-html-index-report-screenshot.png` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
 | HTML validation: `classes.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-classes.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
 | HTML validation: `trainers.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-trainers.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
 | HTML validation: `membership.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-membership.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
 | HTML validation: `contact.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-contact.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
 | HTML validation: `thankyou.html` | Yes | Yes | `docs/evidence/html-validation/w3c-html-thankyou.txt` | Complete with official evidence | None. Official W3C Nu Html Checker reported 0 errors and 0 warnings. |
 | Local article-heading source check | Yes | Yes | `docs/evidence/manual-testing/local-evidence-checks.md` | Complete with local validation evidence | None. Source check confirmed 0 `article` elements without headings. |
-| CSS validation: `css/style.css` | Yes | Yes | `docs/evidence/css-validation/w3c-css-style-css.txt` | Complete with official evidence | None. Official W3C CSS Validator reported 0 errors and 1 documented warning about matching button background and border colour. |
+| CSS validation: `css/style.css` | Yes | Yes | `docs/evidence/css-validation/w3c-css-style-css.txt`; `docs/evidence/css-validation/w3c-css-style-css-screenshot.png` | Complete with official evidence | None. Official W3C CSS Validator reported 0 errors and 1 documented warning about matching button background and border colour. |
 | Local CSS syntax/safety check | Yes | Yes | `docs/evidence/manual-testing/local-evidence-checks.md` | Complete with local validation evidence | None. |
-| Lighthouse desktop evidence | Yes | Yes | `docs/evidence/lighthouse/lighthouse-desktop-report.html`; `docs/evidence/lighthouse/lighthouse-desktop-summary.txt` | Complete with automated browser evidence | None. Scores: Performance 87, Accessibility 100, Best Practices 96, SEO 100. |
-| Lighthouse mobile evidence | Yes | Yes | `docs/evidence/lighthouse/lighthouse-mobile-report.html`; `docs/evidence/lighthouse/lighthouse-mobile-summary.txt` | Complete with automated browser evidence | None. Scores: Performance 85, Accessibility 100, Best Practices 96, SEO 100. |
+| Lighthouse desktop evidence | Yes | Yes | `docs/evidence/lighthouse/lighthouse-desktop-report.html`; `docs/evidence/lighthouse/lighthouse-desktop-summary.txt`; `docs/evidence/lighthouse/lighthouse-desktop-screenshot.png` | Complete with automated browser evidence | None. Scores: Performance 87, Accessibility 100, Best Practices 96, SEO 100. |
+| Lighthouse mobile evidence | Yes | Yes | `docs/evidence/lighthouse/lighthouse-mobile-report.html`; `docs/evidence/lighthouse/lighthouse-mobile-summary.txt`; `docs/evidence/lighthouse/lighthouse-mobile-screenshot.png` | Complete with automated browser evidence | None. Scores: Performance 85, Accessibility 100, Best Practices 96, SEO 100. |
 | Desktop responsive screenshot | Yes | Yes | `docs/evidence/screenshots/index-desktop.png` plus desktop screenshots for all pages | Complete with automated browser evidence | None. |
 | 390px mobile home screenshot | Yes | Yes | `docs/evidence/screenshots/index-mobile-390.png` | Complete with automated browser evidence | None. |
 | 390px mobile contact screenshot | Yes | Yes | `docs/evidence/screenshots/contact-mobile-390.png` | Complete with automated browser evidence | None. |
@@ -46,3 +47,4 @@ This audit records evidence that was actually generated or verified. No official
 - Official W3C CSS validation was completed through the W3C CSS Validator endpoint using the current stylesheet.
 - Lighthouse desktop and mobile reports were generated against the live GitHub Pages homepage.
 - Browser evidence was generated with Microsoft Edge headless against the live GitHub Pages site.
+- Wireframe, validation and Lighthouse screenshots were embedded in the README for final assessment review.

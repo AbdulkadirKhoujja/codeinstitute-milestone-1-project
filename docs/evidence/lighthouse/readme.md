@@ -6,7 +6,9 @@ Files:
 
 * `lighthouse-desktop-report.html`
 * `lighthouse-desktop-report.json`
+* `lighthouse-desktop-screenshot.png`
 * `lighthouse-desktop-summary.txt`
 * `lighthouse-mobile-report.html`
 * `lighthouse-mobile-report.json`
+* `lighthouse-mobile-screenshot.png`
 * `lighthouse-mobile-summary.txt`
